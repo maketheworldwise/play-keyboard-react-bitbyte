@@ -1,0 +1,13 @@
+{
+  "data": {
+    "category": ["LIVE"],
+    "imageUrl": "테마 이미지 URL",
+    "price": 10,
+    "downloads": 360,
+    "isLiveTheme": true,
+    "hashtag": ["pink", "cute", "rabbit", "character", "lovely"],
+    "themeId": "테마 ID",
+    "name": "테마 이름",
+    "figure": [{ "imageUrl": "이모티콘 이미지 URL" }]
+  }
+}
