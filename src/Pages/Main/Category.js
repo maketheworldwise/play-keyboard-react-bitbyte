@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 
-function Category({ category, handleName, setFilter, filter }) {
+function Category({ category, handleName }) {
   const [active, setActive] = useState('');
   return (
     <>
@@ -30,7 +30,7 @@ function Category({ category, handleName, setFilter, filter }) {
 export default Category;
 
 const Wrap = styled.ul`
-  width: 360px;
+  width: 100%;
   height: 48px;
   display: flex;
   overflow-x: scroll;

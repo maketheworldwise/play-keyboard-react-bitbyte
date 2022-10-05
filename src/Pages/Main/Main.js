@@ -6,14 +6,13 @@ import styles from './Main.module.scss';
 
 function Main() {
   const [category, setCategory] = useState([]);
-  const [filter, setFilter] = useState([]);
   const [name, setName] = useState([]);
 
   useEffect(() => {
     getCategories().then(json => setCategory(json.data));
     getThemes(name).then(
-      json => console.log(json.data)
-      // setName(json.data)
+      // json => console.log(json.data) //data consol로 확인
+      json => setName(json.data)
     );
   }, [name]);
 
@@ -23,12 +22,7 @@ function Main() {
 
   return (
     <div className={styles.main_container}>
-      <Category
-        handleName={handleName}
-        category={category}
-        filter={filter}
-        setFilter={setFilter}
-      />
+      <Category handleName={handleName} category={category} />
     </div>
   );
 }
