@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import styled from 'styled-components';
 
-import preview from '../../Assets/Images/Theme-preview.png';
 import downloadIcon from '../../Assets/Svgs/ic_all_download.svg';
 import gemIcon from '../../Assets/Svgs/ic_all_zem.svg';
-import styled from 'styled-components';
 
 const ThemeCard = ({ item }) => {
   const { imageUrl, name, hashtag, downloads, price } = item;
@@ -11,7 +10,7 @@ const ThemeCard = ({ item }) => {
   return (
     <StyledThemeCard>
       <img className="card_img" src={imageUrl} />
-      <h3>{name}</h3>
+      <h3 className="card_name">{name}</h3>
       <div className="tag_box">
         {hashtag.map(tag => (
           <h6>#{tag}</h6>
@@ -32,57 +31,54 @@ const ThemeCard = ({ item }) => {
 };
 
 const StyledThemeCard = styled.div`
-  margin-bottom: 16px;
-  margin-right: 15px;
-
-  width: 164px;
+  width: 48.5%;
+  min-width: 150px;
+  margin-bottom: 1.6em;
 
   .card_img {
+    width: 100%;
     margin-bottom: 8px;
-    margin-right: 15px;
-    width: 164px;
-    height: 130px;
+    border-radius: 10px;
   }
 
-  h3 {
-    margin-bottom: 2px;
-
-    width: 164px;
-    height: 20px;
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-
+  .card_name {
     display: flex;
     align-items: center;
-
+    width: 100%;
+    height: 20px;
+    margin-bottom: 2px;
+    font-weight: 500;
+    font-size: 0.88em; //14px
+    line-height: 20px;
     color: #42444c;
 
+    overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
+    word-break: break-all;
   }
 
   .tag_box {
-    width: 164px;
+    width: 100%;
+    color: #aaabb3;
 
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     word-break: break-all;
 
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
     h6 {
       display: inline;
-      text-overflow: ellipsis;
-      margin: 0 3px 3px 0;
-
       height: 18px;
-
+      margin: 0 3px 3px 0;
       font-weight: 400;
-      font-size: 12px;
+      font-size: 0.75em; //12px
       line-height: 18px;
-
       color: #aaabb3;
-
       opacity: 1;
     }
   }
@@ -90,29 +86,26 @@ const StyledThemeCard = styled.div`
   .info_container {
     display: flex;
     justify-content: space-between;
-    width: 164px;
+    width: 100%;
 
     .download_box {
       display: flex;
       align-items: center;
 
       img {
-        margin-right: 3px;
         width: 12px;
         height: 12px;
+        margin-right: 3px;
       }
 
       p {
-        width: 14px;
-        height: 18px;
-
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 18px;
-
         display: flex;
         align-items: center;
-
+        width: 14px;
+        height: 18px;
+        font-weight: 500;
+        font-size: 0.75em;
+        line-height: 18px;
         color: #aaabb3;
       }
     }
@@ -122,19 +115,17 @@ const StyledThemeCard = styled.div`
       align-items: center;
 
       img {
-        margin-right: 4px;
         width: 12px;
         height: 12px;
+        margin-right: 4px;
       }
 
       p {
         width: 14px;
         height: 18px;
-
         font-weight: 500;
         font-size: 12px;
         line-height: 18px;
-
         color: #7dc9fc;
       }
     }

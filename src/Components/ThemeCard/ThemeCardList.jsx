@@ -22,22 +22,32 @@ const ThemeCardList = () => {
   return (
     <>
       <StyledCardList>
-        {data.map(item => (
-          <ThemeCard key={item.themeId} id={item.themeId} item={item} />
-        ))}
+        <div className="card_list_container">
+          {data.map(item => (
+            <ThemeCard key={item.themeId} id={item.themeId} item={item} />
+          ))}
+        </div>
       </StyledCardList>
     </>
   );
 };
 
 const StyledCardList = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+  padding: 0px 16px;
+  margin: 0 auto;
 
   min-width: 343px;
-  max-width: 650px;
+  max-width: 720px;
 
-  margin: 0 auto;
+  @media screen and (min-width: 600px) {
+    font-size: 20px;
+  }
+
+  .card_list_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 `;
 
 export default ThemeCardList;
