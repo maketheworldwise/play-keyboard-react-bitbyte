@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getDetail } from './Api';
-
+import Emoticons from '../../Components/page2/Emoticons';
 import DetailInfo from '../../Components/DetailInfo/DetailInfo';
+import DetailEmoji from '../../Components/DetailFooter/DetailEmoji';
+import DetailButton from '../../Components/DetailFooter/DetailButton';
 
 import styles from './Detail.module.scss';
 
@@ -15,9 +17,14 @@ function Detail() {
   }, []);
 
   return (
-    <div className={styles.detail_container}>
-      <DetailInfo data={data} />
-    </div>
+    <>
+      <div className={styles.detail_container}>
+        <DetailInfo data={data} />
+        <Emoticons />
+        <DetailEmoji />
+      </div>
+      <DetailButton />
+    </>
   );
 }
 
