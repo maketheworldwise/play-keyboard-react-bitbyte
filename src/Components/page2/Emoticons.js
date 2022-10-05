@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { useParams } from 'react-router-dom';
 import { getDetail } from '../../Pages/Detail/Api';
-import styles from '../../Pages/Detail/Detail.module.scss';
 
 export default function Emoticons() {
   const [data, setdata] = useState([]);
@@ -17,26 +16,24 @@ export default function Emoticons() {
   console.log('test', data);
 
   return (
-    <div className={styles.detail_container}>
-      <Container>
-        <Contents>
-          {data &&
-            data.map(p => {
-              return (
-                <ContentWrapper>
-                  <Contensimg src={p.imageUrl} />
-                </ContentWrapper>
-              );
-            })}
-        </Contents>
-        <TextWrapper>
-          <Text>
-            일부 앱에서는 움짤 형태로 전송되거나, 멈춰있는 이모티콘으로 전송될
-            수 있어요.
-          </Text>
-        </TextWrapper>
-      </Container>
-    </div>
+    <Container>
+      <Contents>
+        {data &&
+          data.map(p => {
+            return (
+              <ContentWrapper>
+                <Contensimg src={p.imageUrl} />
+              </ContentWrapper>
+            );
+          })}
+      </Contents>
+      <TextWrapper>
+        <Text>
+          일부 앱에서는 움짤 형태로 전송되거나, 멈춰있는 이모티콘으로 전송될 수
+          있어요.
+        </Text>
+      </TextWrapper>
+    </Container>
   );
 }
 
@@ -54,8 +51,12 @@ const TextWrapper = styled.div`
 `;
 
 const ContentWrapper = styled.div`
+  width: 25%;
   margin-right: 30.64px;
   margin-bottom: 29.84px;
+  @media only handheld and (min-width: 50px) {
+    width: 20%;
+  }
 `;
 
 const Contents = styled.div`
@@ -63,13 +64,11 @@ const Contents = styled.div`
   justify-content: center;
   width: 100%;
   flex-wrap: wrap;
-
   padding: 0;
 `;
 
 const Contensimg = styled.img`
-  width: 71.36px;
-  height: 71.36px;
+  width: 100%;
 `;
 
 const Container = styled.div`
@@ -77,4 +76,5 @@ const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  margin-top: 40px;
 `;
