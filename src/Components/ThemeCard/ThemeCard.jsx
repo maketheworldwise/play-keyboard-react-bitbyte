@@ -39,12 +39,11 @@ const ThemeCard = ({ item }) => {
 
 const StyledThemeCard = styled.div`
   width: 48.5%;
-  min-width: 150px;
-  margin-bottom: 1.6em;
+  margin-bottom: 1em; // 16px
 
   .card_img {
     width: 100%;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5em; // 8px
     border-radius: 10px;
   }
 
@@ -52,7 +51,7 @@ const StyledThemeCard = styled.div`
     display: flex;
     align-items: center;
     width: 100%;
-    margin-bottom: 0.1em;
+    margin-bottom: 0.1em; // 2px
     font-weight: 500;
     font-size: 0.88em; //14px
     line-height: 20px;
@@ -65,16 +64,12 @@ const StyledThemeCard = styled.div`
 
   .tag_box {
     width: 100%;
-    margin-bottom: 0.2em;
+    margin-bottom: 0.2em; // 3px
     color: #aaabb3;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     word-break: break-all;
-
-    /* display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical; */
 
     h6 {
       display: inline;
@@ -106,9 +101,8 @@ const StyledThemeCard = styled.div`
         display: flex;
         align-items: center;
         width: 14px;
-        height: 18px;
         font-weight: 500;
-        font-size: 0.75em;
+        font-size: 0.75em; // 12px
         line-height: 18px;
         color: #aaabb3;
       }
@@ -126,9 +120,8 @@ const StyledThemeCard = styled.div`
 
       p {
         width: 14px;
-        height: 18px;
         font-weight: 500;
-        font-size: 0.75em;
+        font-size: 0.75em; // 12px
         line-height: 18px;
         color: #7dc9fc;
       }
