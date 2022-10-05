@@ -35,25 +35,25 @@ function Footer() {
         <div className="footer-wrap">
           <div className="nav">
             <div className="icons" onClick={handleStore}>
-              <img src={store ? Store : Store_p} />
+              <img src={store ? Store : Store_p} alt="icon" />
               <p style={store ? { color: '#919299' } : { color: '#FF417D' }}>
                 스토어
               </p>
             </div>
             <div className="icons" onClick={handleDia}>
-              <img src={dia ? Dia : Dia_p} />
+              <img src={dia ? Dia : Dia_p} alt="icon" />
               <p style={dia ? { color: '#919299' } : { color: '#FF417D' }}>
                 충전소
               </p>
             </div>
             <div className="icons" onClick={handleHeart}>
-              <img src={heart ? Heart : Heart_p} />
+              <img src={heart ? Heart : Heart_p} alt="icon" />
               <p style={heart ? { color: '#919299' } : { color: '#FF417D' }}>
                 MY테마
               </p>
             </div>
             <div className="icons" onClick={handleAdmin}>
-              <img src={admin ? Admin : Admin_p} />
+              <img src={admin ? Admin : Admin_p} alt="icon" />
               <p style={admin ? { color: '#919299' } : { color: '#FF417D' }}>
                 설정
               </p>
