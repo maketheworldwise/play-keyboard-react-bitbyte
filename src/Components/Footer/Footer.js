@@ -78,7 +78,7 @@ const StyledFooter = styled.div`
     height: 56px;
     border-top: 1px solid gray;
     margin: 0 auto;
-    position: absolute;
+    position: relative;
 
     div.nav {
       display: flex;
