@@ -1,0 +1,26 @@
+/*
+ * position
+ * box model
+ * visual
+ * typography
+ * misc
+ */
+
+.theme_info_tag {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 60.8px;
+  min-height: 28px;
+  border-radius: 18px;
+  background-color: #ebedf5;
+
+  span {
+    display: flex;
+    align-items: center;
+    padding: 0.28em 0.6em; // 4px 10.3px
+    font-weight: 500;
+    font-size: 0.9em; //14px
+    text-align: center;
+  }
+}
