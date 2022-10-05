@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import DetailButton from '../../Components/DetailFooter/DetailButton';
+import DetailEmoji from '../../Components/DetailFooter/DetailEmoji';
 import { getDetail } from './Api';
 import Emoticons from '../../Components/page2/Emoticons';
 import DetailInfo from '../../Components/DetailInfo/DetailInfo';
@@ -15,10 +17,14 @@ function Detail() {
   }, []);
 
   return (
-    <div className={styles.detail_container}>
-      <DetailInfo data={data} />
-      <Emoticons />
-    </div>
+    <>
+      <div className={styles.detail_container}>
+        <DetailInfo data={data} />
+        <Emoticons />
+        <DetailEmoji />
+      </div>
+      <DetailButton />
+    </>
   );
 }
 
