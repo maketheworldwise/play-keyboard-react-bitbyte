@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import DetailButton from '../../Components/DetailFooter/DetailButton';
-import DetailEmoji from '../../Components/DetailFooter/DetailEmoji';
 import { getDetail } from './Api';
 import Emoticons from '../../Components/page2/Emoticons';
 import DetailInfo from '../../Components/DetailInfo/DetailInfo';
+import DetailEmoji from '../../Components/DetailFooter/DetailEmoji';
+import DetailButton from '../../Components/DetailFooter/DetailButton';
 
 import styles from './Detail.module.scss';
 
