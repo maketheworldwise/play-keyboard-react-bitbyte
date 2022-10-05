@@ -24,7 +24,7 @@ const ThemeCardList = () => {
       <StyledCardList>
         <div className="card_list_container">
           {data.map(item => (
-            <ThemeCard key={item.themeId} id={item.themeId} item={item} />
+            <ThemeCard key={item['_id']} id={item.themeId} item={item} />
           ))}
         </div>
       </StyledCardList>

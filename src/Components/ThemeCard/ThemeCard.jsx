@@ -1,19 +1,26 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
 import downloadIcon from '../../Assets/Svgs/ic_all_download.svg';
 import gemIcon from '../../Assets/Svgs/ic_all_zem.svg';
 
 const ThemeCard = ({ item }) => {
-  const { imageUrl, name, hashtag, downloads, price } = item;
+  const { themeId, imageUrl, name, hashtag, downloads, price } = item;
+
+  const navigate = useNavigate();
 
   return (
-    <StyledThemeCard>
+    <StyledThemeCard
+      onClick={() => {
+        navigate(`/detail/${themeId}`);
+      }}
+    >
       <img className="card_img" src={imageUrl} />
       <h3 className="card_name">{name}</h3>
       <div className="tag_box">
-        {hashtag.map(tag => (
-          <h6>#{tag}</h6>
+        {hashtag.map((tag, idx) => (
+          <h6 key={idx}>#{tag}</h6>
         ))}
       </div>
       <div className="info_container">
@@ -37,7 +44,7 @@ const StyledThemeCard = styled.div`
 
   .card_img {
     width: 100%;
-    margin-bottom: 8px;
+    margin-bottom: 0.5em;
     border-radius: 10px;
   }
 
@@ -45,13 +52,11 @@ const StyledThemeCard = styled.div`
     display: flex;
     align-items: center;
     width: 100%;
-    height: 20px;
-    margin-bottom: 2px;
+    margin-bottom: 0.1em;
     font-weight: 500;
     font-size: 0.88em; //14px
     line-height: 20px;
     color: #42444c;
-
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -60,21 +65,20 @@ const StyledThemeCard = styled.div`
 
   .tag_box {
     width: 100%;
+    margin-bottom: 0.2em;
     color: #aaabb3;
-
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     word-break: break-all;
 
-    display: -webkit-box;
+    /* display: -webkit-box;
     -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: vertical; */
 
     h6 {
       display: inline;
-      height: 18px;
-      margin: 0 3px 3px 0;
+      margin-right: 3px;
       font-weight: 400;
       font-size: 0.75em; //12px
       line-height: 18px;
@@ -124,7 +128,7 @@ const StyledThemeCard = styled.div`
         width: 14px;
         height: 18px;
         font-weight: 500;
-        font-size: 12px;
+        font-size: 0.75em;
         line-height: 18px;
         color: #7dc9fc;
       }
