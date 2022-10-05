@@ -11,13 +11,11 @@ function Router() {
   return (
     <BrowserRouter>
       <GlobalStyles />
-      <Header />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/main" element={<Main />} />
         <Route path="/detail/:themeId" element={<Detail />} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }
