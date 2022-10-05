@@ -11,6 +11,15 @@
   flex-direction: column;
   justify-content: center;
 
+  .detail_back_btn {
+    padding: 1.23em 0; // 19.6px 0
+
+    img {
+      width: 1.15em; // 18px
+      height: 1.03em; // 16.54px
+    }
+  }
+
   .detail_image {
     display: flex;
     justify-content: center;
