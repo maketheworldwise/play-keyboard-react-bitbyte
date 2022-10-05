@@ -1,0 +1,17 @@
+/*
+ * position
+ * box model
+ * visual
+ * typography
+ * misc
+ */
+
+.hashtag_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  row-gap: 0.56em; // 8px
+  column-gap: 0.29em; // 4.12px
+  padding: 1.3em 0; // 20px 0
+}
