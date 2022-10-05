@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react';
 import { getCategories, getThemes } from './Api';
 import Category from './Category';
 
+import ThemeCardList from '../../Components/ThemeCard/ThemeCardList';
+
 import styles from './Main.module.scss';
 
 function Main() {
@@ -28,6 +30,7 @@ function Main() {
   return (
     <div className={styles.main_container}>
       <Category handleName={handleName} category={category} />
+      <ThemeCardList data={data} />
     </div>
   );
 }
