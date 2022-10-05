@@ -77,6 +77,7 @@ const TextWrapper = styled.div`
 
 const ContentWrapper = styled.div`
   width: 23%;
+  margin-top: 35px;
   :nth-child(3n-1) {
     margin-left: 12%;
     margin-right: 10%;
