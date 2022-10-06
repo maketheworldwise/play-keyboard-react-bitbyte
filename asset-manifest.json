@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/play-keyboard-react-bitbyte/static/css/main.fff6a96e.css",
+    "main.js": "/play-keyboard-react-bitbyte/static/js/main.a0d2c93a.js",
+    "static/media/have.svg": "/play-keyboard-react-bitbyte/static/media/have.3827d95825c931256e949a744a1a6aa6.svg",
+    "static/media/heart.svg": "/play-keyboard-react-bitbyte/static/media/heart.ad5402c8cf829be4dc6d9e528872020a.svg",
+    "static/media/cheer.svg": "/play-keyboard-react-bitbyte/static/media/cheer.9117386bcca5a3220c46d0c22af9fa3b.svg",
+    "static/media/like.svg": "/play-keyboard-react-bitbyte/static/media/like.da26add0312d29ec8610d3fb74f61686.svg",
+    "static/media/logo.svg": "/play-keyboard-react-bitbyte/static/media/logo.a2ee937c79ee1214eb6e5349aa970e96.svg",
+    "static/media/icon_dia.svg": "/play-keyboard-react-bitbyte/static/media/icon_dia.3a50c95db6ee33b81d4e54e9242ad971.svg",
+    "static/media/store.svg": "/play-keyboard-react-bitbyte/static/media/store.bd71ab263b70ace83e710fafb4bb70ea.svg",
+    "static/media/admin.svg": "/play-keyboard-react-bitbyte/static/media/admin.a19d16a9b1d06eb491e6c598addd4ed8.svg",
+    "static/media/admin_p.svg": "/play-keyboard-react-bitbyte/static/media/admin_p.3bcc7fa2a46a45d46be5931a4e1bf256.svg",
+    "static/media/store_p.svg": "/play-keyboard-react-bitbyte/static/media/store_p.b7e13158025db71a996708a6069f82f8.svg",
+    "static/media/ic_all_download.svg": "/play-keyboard-react-bitbyte/static/media/ic_all_download.aed4ec79f2eb735bf517d03841d2bd1b.svg",
+    "static/media/dia.svg": "/play-keyboard-react-bitbyte/static/media/dia.174880053e61748a3f3536d5f39dfe06.svg",
+    "static/media/ic_all_back.svg": "/play-keyboard-react-bitbyte/static/media/ic_all_back.94878af41d33b57366a09061a660af10.svg",
+    "static/media/ic_all_share.svg": "/play-keyboard-react-bitbyte/static/media/ic_all_share.939b354ba042301c6f968e85ca0f25fb.svg",
+    "static/media/ic_all_zem.svg": "/play-keyboard-react-bitbyte/static/media/ic_all_zem.d01f5b7a7096e472c7b9dac2908eb1a1.svg",
+    "static/media/heart_p.svg": "/play-keyboard-react-bitbyte/static/media/heart_p.1f6617fc1248d779ae139e642c68a5db.svg",
+    "static/media/dia_p.svg": "/play-keyboard-react-bitbyte/static/media/dia_p.2d2707cae0cca7fed91c05fc4bef9915.svg",
+    "index.html": "/play-keyboard-react-bitbyte/index.html",
+    "main.fff6a96e.css.map": "/play-keyboard-react-bitbyte/static/css/main.fff6a96e.css.map",
+    "main.a0d2c93a.js.map": "/play-keyboard-react-bitbyte/static/js/main.a0d2c93a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fff6a96e.css",
+    "static/js/main.a0d2c93a.js"
+  ]
+}
