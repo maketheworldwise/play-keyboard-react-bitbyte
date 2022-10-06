@@ -34,19 +34,19 @@ function Footer() {
       <StyledFooter>
         <div className="footer-wrap">
           <div className="nav">
-            <div className="icons" onClick={handleStore}>
+            <div className="icons " onClick={handleStore}>
               <img src={store ? Store : Store_p} alt="icon" />
               <p style={store ? { color: '#919299' } : { color: '#FF417D' }}>
                 스토어
               </p>
             </div>
-            <div className="icons" onClick={handleDia}>
+            <div className="icons " onClick={handleDia}>
               <img src={dia ? Dia : Dia_p} alt="icon" />
               <p style={dia ? { color: '#919299' } : { color: '#FF417D' }}>
                 충전소
               </p>
             </div>
-            <div className="icons" onClick={handleHeart}>
+            <div className="icons " onClick={handleHeart}>
               <img src={heart ? Heart : Heart_p} alt="icon" />
               <p style={heart ? { color: '#919299' } : { color: '#FF417D' }}>
                 MY테마
@@ -79,15 +79,15 @@ const StyledFooter = styled.div`
     bottom: 0;
     left: 0;
     right: 0;
-    height: 56px;
+    height: 3.5em; //56px;
     border-top: 1px solid gray;
     margin: 0 auto;
-    position: absolute;
+    position: relative;
 
     div.nav {
       display: flex;
       width: 100%;
-      height: 56px;
+      height: 3.5em; //56px;
       justify-content: space-between;
 
       div.icons {
@@ -110,6 +110,11 @@ const StyledFooter = styled.div`
           font-size: 0.6rem;
         }
       }
+    }
+  }
+  @media screen and (min-width: 600px) {
+    .div.footer-wrap {
+      font-size: 1.25em; //20px;
     }
   }
 `;

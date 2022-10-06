@@ -1,3 +1,5 @@
+import Footer from '../../Components/Footer/Footer';
+import Header from '../../Components/Header/Header';
 import { useEffect, useState } from 'react';
 
 import { getCategories, getThemes } from './Api';

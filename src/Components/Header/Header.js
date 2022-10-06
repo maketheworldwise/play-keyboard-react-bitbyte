@@ -30,7 +30,7 @@ const StyledHeader = styled.div`
 
   div.titleContainer {
     display: flex;
-    position: absolute;
+    position: relative;
     width: 100%;
     max-width: 720px;
     height: 56px;
@@ -64,7 +64,7 @@ const StyledHeader = styled.div`
     position: relative;
     width: 100%;
     height: 24px;
-    top: 80px;
+    top: 25px;
     left: 16px;
     margin-left: 10px;
 
