@@ -11,7 +11,7 @@ function Router() {
       <GlobalStyles />
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/theme" element={<Main />} />
+        <Route path="/main" element={<Main />} />
         <Route path="/detail/:themeId" element={<Detail />} />
       </Routes>
     </BrowserRouter>
