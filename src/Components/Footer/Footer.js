@@ -1,32 +1,44 @@
 import { useState } from 'react';
-import Admin from '../../Assets/Images/bottom_nav/admin.png';
-import Admin_p from '../../Assets/Images/bottom_nav/admin_p.png';
-import Store from '../../Assets/Images/bottom_nav/store.png';
-import Store_p from '../../Assets/Images/bottom_nav/store_p.png';
-import Heart from '../../Assets/Images/bottom_nav/heart.png';
-import Heart_p from '../../Assets/Images/bottom_nav/heart_p.png';
-import Dia from '../../Assets/Images/bottom_nav/dia.png';
-import Dia_p from '../../Assets/Images/bottom_nav/dia_p.png';
+import Admin from '../../Assets/Svgs/navbar/admin.svg';
+import Admin_p from '../../Assets/Svgs/navbar/admin_p.svg';
+import Store from '../../Assets/Svgs/navbar/store.svg';
+import Store_p from '../../Assets/Svgs/navbar/store_p.svg';
+import Heart from '../../Assets/Svgs/navbar/heart.svg';
+import Heart_p from '../../Assets/Svgs/navbar/heart_p.svg';
+import Dia from '../../Assets/Svgs/navbar/dia.svg';
+import Dia_p from '../../Assets/Svgs/navbar/dia_p.svg';
 import styled from 'styled-components';
 
 function Footer() {
-  const [store, setStore] = useState(true);
-  const [dia, setDia] = useState(true);
+  const [store, setStore] = useState(false);
+  const [dia, setDia] = useState(false);
   const [heart, setHeart] = useState(false);
-  const [admin, setAdmin] = useState(true);
+  const [admin, setAdmin] = useState(false);
 
   const handleStore = () => {
-    setStore(!store);
+    setStore(true);
+    setDia(false);
+    setHeart(false);
+    setAdmin(false);
   };
 
   const handleDia = () => {
-    setDia(!dia);
+    setDia(true);
+    setStore(false);
+    setHeart(false);
+    setAdmin(false);
   };
   const handleHeart = () => {
-    setHeart(!heart);
+    setHeart(true);
+    setStore(false);
+    setDia(false);
+    setAdmin(false);
   };
   const handleAdmin = () => {
-    setAdmin(!admin);
+    setAdmin(true);
+    setStore(false);
+    setDia(false);
+    setHeart(false);
   };
 
   return (
@@ -35,26 +47,26 @@ function Footer() {
         <div className="footer-wrap">
           <div className="nav">
             <div className="icons " onClick={handleStore}>
-              <img src={store ? Store : Store_p} alt="icon" />
-              <p style={store ? { color: '#919299' } : { color: '#FF417D' }}>
+              <img src={store ? Store_p : Store} alt="icon" />
+              <p style={store ? { color: '#FF417D' } : { color: '#919299' }}>
                 스토어
               </p>
             </div>
             <div className="icons " onClick={handleDia}>
-              <img src={dia ? Dia : Dia_p} alt="icon" />
-              <p style={dia ? { color: '#919299' } : { color: '#FF417D' }}>
+              <img src={dia ? Dia_p : Dia} alt="icon" />
+              <p style={dia ? { color: '#FF417D' } : { color: '#919299' }}>
                 충전소
               </p>
             </div>
             <div className="icons " onClick={handleHeart}>
-              <img src={heart ? Heart : Heart_p} alt="icon" />
-              <p style={heart ? { color: '#919299' } : { color: '#FF417D' }}>
+              <img src={heart ? Heart_p : Heart} alt="icon" />
+              <p style={heart ? { color: '#FF417D' } : { color: '#919299' }}>
                 MY테마
               </p>
             </div>
             <div className="icons" onClick={handleAdmin}>
-              <img src={admin ? Admin : Admin_p} alt="icon" />
-              <p style={admin ? { color: '#919299' } : { color: '#FF417D' }}>
+              <img src={admin ? Admin_p : Admin} alt="icon" />
+              <p style={admin ? { color: '#FF417D' } : { color: '#919299' }}>
                 설정
               </p>
             </div>
@@ -82,7 +94,7 @@ const StyledFooter = styled.div`
     width: 100%;
     max-width: 720px;
     height: 3.5em; //56px;
-    border-top: 1px solid gray;
+    box-shadow: 4px 4px 4px 4px lightgray;
     margin: 0 auto;
     position: relative;
 
