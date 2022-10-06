@@ -25,7 +25,7 @@ export default Header;
 const StyledHeader = styled.div`
   width: 100%;
   max-width: 720px;
-  min-width: 343px;
+  min-width: 375px;
   height: 123px;
 
   div.titleContainer {
