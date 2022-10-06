@@ -26,7 +26,7 @@ const ThemeCard = ({ item }) => {
       <div className="info_container">
         <div className="download_box">
           <img src={downloadIcon} />
-          <p>{downloads}</p>
+          <p>{downloads.toLocaleString()}</p>
         </div>
         <div className="price_box">
           <img src={gemIcon} />

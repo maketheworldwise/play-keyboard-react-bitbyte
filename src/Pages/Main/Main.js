@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
 
 import { getCategories, getThemes } from './Api';
-import Category from './Category';
 
+import Header from '../../Components/Header/Header';
+import Footer from '../../Components/Footer/Footer';
+import Category from './Category';
 import ThemeCardList from '../../Components/ThemeCard/ThemeCardList';
 
 import styles from './Main.module.scss';
@@ -29,8 +31,10 @@ function Main() {
 
   return (
     <div className={styles.main_container}>
+      <Header />
       <Category handleName={handleName} category={category} />
       <ThemeCardList data={data} />
+      <Footer />
     </div>
   );
 }

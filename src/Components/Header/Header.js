@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { BiSearch } from 'react-icons/bi';
-// import logo from '../../Assets/logo.png';
+import logo from '../../Assets/logo.png';
 
 function Header() {
   return (
@@ -8,7 +8,7 @@ function Header() {
       <StyledHeader>
         <div className="titleContainer">
           <div className="title">
-            {/* <img src={logo} alt="logo"></img> */}
+            <img src={logo} alt="logo"></img>
             <BiSearch className="search" />
           </div>
         </div>

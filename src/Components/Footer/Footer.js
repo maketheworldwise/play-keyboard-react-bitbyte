@@ -68,6 +68,10 @@ function Footer() {
 export default Footer;
 
 const StyledFooter = styled.div`
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+
   div.footer-wrap {
     display: flex;
     width: 100%;
