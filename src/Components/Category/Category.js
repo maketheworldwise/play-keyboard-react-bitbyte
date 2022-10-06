@@ -37,6 +37,7 @@ const Wrap = styled.ul`
   padding-right: 16px;
   height: 48px;
   display: flex;
+  align-items: center;
   overflow-x: scroll;
   -ms-overflow-style: none;
 
@@ -44,9 +45,11 @@ const Wrap = styled.ul`
     padding-top: 14px;
     cursor: pointer;
     span {
-      width: 148px;
+      white-space: nowrap;
+      margin-right: 20px;
       display: block;
       text-align: center;
+      line-height: 24px;
       height: 32px;
       color: #aaabb3;
       &.active {
