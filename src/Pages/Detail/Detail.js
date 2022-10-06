@@ -1,15 +1,16 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getDetail } from './Api';
+
 import Emoticons from '../../Components/page2/Emoticons';
-import DetailInfo from '../../Components/DetailInfo/DetailInfo';
 import DetailEmoji from '../../Components/DetailFooter/DetailEmoji';
 import DetailButton from '../../Components/DetailFooter/DetailButton';
+import EmoticonInfo from '../../Components/EmoticonInfo/EmoticonInfo';
 import EmoticonList from '../../Components/Examples/EmoticonList/EmoticonList';
 import EmoticonReviews from '../../Components/Examples/EmoticonReviews/EmoticonReviews';
+import EmoticonFeatures from '../../Components/Examples/EmoticonFeatures/EmoticonFeatures';
 
 import styles from './Detail.module.scss';
-import DetailFeatures from '../../Components/Examples/DetailFeatures/DetailFeatures';
 
 function Detail() {
   const { themeId } = useParams();
@@ -22,7 +23,7 @@ function Detail() {
   return (
     <>
       <div className={styles.detail_container_top}>
-        <DetailInfo data={data} />
+        <EmoticonInfo data={data} />
         {/* <Emoticons /> */}
         <EmoticonList data={data} />
         {/* <DetailEmoji /> */}
@@ -30,7 +31,7 @@ function Detail() {
       {/* <DetailButton /> */}
       <div className={styles.detail_container_bottom}>
         <EmoticonReviews />
-        <DetailFeatures />
+        <EmoticonFeatures />
       </div>
     </>
   );

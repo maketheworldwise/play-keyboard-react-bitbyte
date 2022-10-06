@@ -1,7 +1,7 @@
-import styles from './DetailFeatures.module.scss';
+import styles from './EmoticonFeatures.module.scss';
 import icondia from '../../../Assets/Svgs/icon_dia.svg';
 
-function DetailFeatures() {
+function EmoticonFeatures() {
   return (
     <div className={styles.detail_features_container}>
       <div className={styles.detail_inquiry}>
@@ -29,4 +29,4 @@ function DetailFeatures() {
   );
 }
 
-export default DetailFeatures;
+export default EmoticonFeatures;
