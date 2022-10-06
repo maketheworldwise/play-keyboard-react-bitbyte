@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+
 import { getCategories, getThemes } from './Api';
 
 import Header from '../../Components/Header/Header';
