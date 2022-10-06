@@ -34,11 +34,9 @@ const DetailEmoji = () => {
             }}
           />
           <span
-            className={
-              'emoji_text' +
-              ' ' +
-              (isLikeClicked ? 'emoji_selected' : 'emoji_primary')
-            }
+            className={`emoji_text ${
+              isLikeClicked ? 'emoji_selected' : 'emoji_primary'
+            }`}
             onClick={() => {
               setIsLikeCount(isLikeCount + 1);
               setIsLikeClicked(true);
@@ -50,11 +48,9 @@ const DetailEmoji = () => {
             맘에들어요
           </span>
           <span
-            className={
-              'emoji_number' +
-              ' ' +
-              (isLikeClicked ? 'emoji_selected' : 'emoji_primary')
-            }
+            className={`emoji_number ${
+              isLikeClicked ? 'emoji_selected' : 'emoji_primary'
+            }`}
             onClick={() => {
               setIsLikeCount(isLikeCount + 1);
               setIsLikeClicked(true);
@@ -80,11 +76,9 @@ const DetailEmoji = () => {
             }}
           />
           <span
-            className={
-              'emoji_text' +
-              ' ' +
-              (isHeartClicked ? 'emoji_selected' : 'emoji_primary')
-            }
+            className={`emoji_text ${
+              isHeartClicked ? 'emoji_selected' : 'emoji_primary'
+            }`}
             onClick={() => {
               setIsHeartCount(isHeartCount + 1);
               setIsLikeClicked(false);
@@ -96,11 +90,9 @@ const DetailEmoji = () => {
             심쿵했어요
           </span>
           <span
-            className={
-              'emoji_number' +
-              ' ' +
-              (isHeartClicked ? 'emoji_selected' : 'emoji_primary')
-            }
+            className={`emoji_number ${
+              isHeartClicked ? 'emoji_selected' : 'emoji_primary'
+            }`}
             onClick={() => {
               setIsHeartCount(isHeartCount + 1);
               setIsLikeClicked(false);
@@ -126,11 +118,9 @@ const DetailEmoji = () => {
             }}
           />
           <span
-            className={
-              'emoji_text' +
-              ' ' +
-              (isCheerClicked ? 'emoji_selected' : 'emoji_primary')
-            }
+            className={`emoji_text ${
+              isCheerClicked ? 'emoji_selected' : 'emoji_primary'
+            }`}
             onClick={() => {
               setIsCheerCount(isCheerCount + 1);
               setIsLikeClicked(false);
@@ -142,11 +132,9 @@ const DetailEmoji = () => {
             응원해요
           </span>
           <span
-            className={
-              'emoji_number' +
-              ' ' +
-              (isCheerClicked ? 'emoji_selected' : 'emoji_primary')
-            }
+            className={`emoji_number ${
+              isCheerClicked ? 'emoji_selected' : 'emoji_primary'
+            }`}
             onClick={() => {
               setIsCheerCount(isCheerCount + 1);
               setIsLikeClicked(false);
@@ -172,11 +160,9 @@ const DetailEmoji = () => {
             }}
           />
           <span
-            className={
-              'emoji_text' +
-              ' ' +
-              (isHaveClicked ? 'emoji_selected' : 'emoji_primary')
-            }
+            className={`emoji_text ${
+              isHaveClicked ? 'emoji_selected' : 'emoji_primary'
+            }`}
             onClick={() => {
               setIsHaveCount(isHaveCount + 1);
               setIsLikeClicked(false);
@@ -188,11 +174,9 @@ const DetailEmoji = () => {
             갖고싶어요
           </span>
           <span
-            className={
-              'emoji_number' +
-              ' ' +
-              (isHaveClicked ? 'emoji_selected' : 'emoji_primary')
-            }
+            className={`emoji_number ${
+              isHaveClicked ? 'emoji_selected' : 'emoji_primary'
+            }`}
             onClick={() => {
               setIsHaveCount(isHaveCount + 1);
               setIsLikeClicked(false);
