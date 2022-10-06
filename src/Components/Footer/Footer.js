@@ -76,7 +76,7 @@ const StyledFooter = styled.div`
     left: 0;
     right: 0;
     height: 3.5em; //56px;
-    border-top: 1px solid gray;
+    border-top: 1px solid gray; //red
     margin: 0 auto;
     position: relative;
 
