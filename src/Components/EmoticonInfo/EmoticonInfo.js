@@ -78,8 +78,8 @@ function EmoticonInfo(props) {
       </div>
       <CustomSheet
         isOpen={activateKeyboard}
-        disableDrag={true}
-        snapPoints={[-500, 50, 10, 0]}
+        onClose={handleActivateKeyboard}
+        snapPoints={[-400, 0, 0, 0]}
       >
         <CustomSheet.Container>
           <CustomSheet.Header />
