@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/play-keyboard-react-bitbyte/static/css/main.fff6a96e.css",
-    "main.js": "/play-keyboard-react-bitbyte/static/js/main.a0d2c93a.js",
+    "main.js": "/play-keyboard-react-bitbyte/static/js/main.f42df515.js",
     "static/media/have.svg": "/play-keyboard-react-bitbyte/static/media/have.3827d95825c931256e949a744a1a6aa6.svg",
     "static/media/heart.svg": "/play-keyboard-react-bitbyte/static/media/heart.ad5402c8cf829be4dc6d9e528872020a.svg",
     "static/media/cheer.svg": "/play-keyboard-react-bitbyte/static/media/cheer.9117386bcca5a3220c46d0c22af9fa3b.svg",
@@ -21,10 +21,10 @@
     "static/media/dia_p.svg": "/play-keyboard-react-bitbyte/static/media/dia_p.2d2707cae0cca7fed91c05fc4bef9915.svg",
     "index.html": "/play-keyboard-react-bitbyte/index.html",
     "main.fff6a96e.css.map": "/play-keyboard-react-bitbyte/static/css/main.fff6a96e.css.map",
-    "main.a0d2c93a.js.map": "/play-keyboard-react-bitbyte/static/js/main.a0d2c93a.js.map"
+    "main.f42df515.js.map": "/play-keyboard-react-bitbyte/static/js/main.f42df515.js.map"
   },
   "entrypoints": [
     "static/css/main.fff6a96e.css",
-    "static/js/main.a0d2c93a.js"
+    "static/js/main.f42df515.js"
   ]
 }
