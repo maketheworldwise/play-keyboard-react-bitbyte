@@ -42,14 +42,12 @@ const Wrap = styled.ul`
   -ms-overflow-style: none;
 
   li {
-    padding-top: 14px;
     cursor: pointer;
     span {
       white-space: nowrap;
       margin-right: 20px;
       display: block;
       text-align: center;
-      line-height: 24px;
       height: 32px;
       color: #aaabb3;
       &.active {
