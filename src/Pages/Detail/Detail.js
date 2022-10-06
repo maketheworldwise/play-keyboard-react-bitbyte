@@ -24,8 +24,8 @@ function Detail() {
     <>
       <div className={styles.detail_container_top}>
         <EmoticonInfo data={data} />
-        {/* <Emoticons /> */}
-        <EmoticonList data={data} />
+        <Emoticons data={data} />
+        {/* <EmoticonList data={data} /> */}
         {/* <DetailEmoji /> */}
       </div>
       {/* <DetailButton /> */}
