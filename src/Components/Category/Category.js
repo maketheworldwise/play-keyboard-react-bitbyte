@@ -36,9 +36,11 @@ const Wrap = styled.ul`
   overflow-x: scroll;
   /* border: 1px solid blue; */
   -ms-overflow-style: none;
+
   li {
     margin-right: 16px;
     padding-top: 14px;
+
     span {
       margin-right: 12px;
       margin-left: 12px;
@@ -47,6 +49,7 @@ const Wrap = styled.ul`
       text-align: center;
       height: 32px;
       color: #aaabb3;
+      
       &.active {
         /* width: 100%; */
         font-weight: 700;
