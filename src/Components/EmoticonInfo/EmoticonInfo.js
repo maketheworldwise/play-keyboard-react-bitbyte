@@ -3,11 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import HashTag from './HashTag/HashTag';
 import HashTagContainer from './HashTag/HashTagContainer';
 
-import styles from './DetailInfo.module.scss';
+import styles from './EmoticonInfo.module.scss';
 import IcAllBack from '../../Assets/Svgs/ic_all_back.svg';
 import IcAllShare from '../../Assets/Svgs/ic_all_share.svg';
 
-function DetailInfo(props) {
+function EmoticonInfo(props) {
   const data = props.data;
   const navigate = useNavigate();
   const handleBackClick = () => {
@@ -46,4 +46,4 @@ function DetailInfo(props) {
   );
 }
 
-export default DetailInfo;
+export default EmoticonInfo;
