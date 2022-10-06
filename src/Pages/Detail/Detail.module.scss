@@ -6,5 +6,15 @@
  * misc
  */
 
-.detail_container {
+.detail_container_top {
+  padding: 0 16px;
+  margin: 0 auto;
+  min-width: 343px;
+  max-width: 720px;
+}
+
+.detail_container_bottom {
+  margin: 0 auto;
+  min-width: 343px;
+  max-width: 720px;
 }
