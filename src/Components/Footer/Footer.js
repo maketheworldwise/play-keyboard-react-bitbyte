@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import { useState } from 'react';
 import Admin from '../../Assets/Svgs/bottom_nav/admin.png';
 import Admin_p from '../../Assets/Svgs/bottom_nav/admin_p.png';
@@ -8,6 +7,7 @@ import Heart from '../../Assets/Svgs/bottom_nav/heart.png';
 import Heart_p from '../../Assets/Svgs/bottom_nav/heart_p.png';
 import Dia from '../../Assets/Svgs/bottom_nav/dia.png';
 import Dia_p from '../../Assets/Svgs/bottom_nav/dia_p.png';
+import styled from 'styled-components';
 
 function Footer() {
   const [store, setStore] = useState(true);
@@ -68,17 +68,19 @@ function Footer() {
 export default Footer;
 
 const StyledFooter = styled.div`
+  display: inline-block;
   width: 100%;
   position: fixed;
   bottom: 0;
+  background: white;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
 
   div.footer-wrap {
     display: flex;
     width: 100%;
     max-width: 720px;
-    bottom: 0;
-    left: 0;
-    right: 0;
     height: 3.5em; //56px;
     border-top: 1px solid gray;
     margin: 0 auto;
