@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import downloadIcon from '../../Assets/Svgs/ic_all_download.svg';
 import gemIcon from '../../Assets/Svgs/ic_all_zem.svg';
@@ -24,11 +24,11 @@ const ThemeCard = ({ item }) => {
         ))}
       </div>
       <div className="info_container">
-        <div className="download_box">
+        <div className="download box">
           <img src={downloadIcon} alt="none" />
           <p>{downloads}</p>
         </div>
-        <div className="price_box">
+        <div className="price box">
           <img src={gemIcon} alt="none" />
           <p>{price}</p>
         </div>
@@ -36,6 +36,13 @@ const ThemeCard = ({ item }) => {
     </StyledThemeCard>
   );
 };
+
+const Ellipsis = css`
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+`;
 
 const StyledThemeCard = styled.div`
   width: 48.5%;
@@ -56,20 +63,14 @@ const StyledThemeCard = styled.div`
     font-size: 0.88em; //14px
     line-height: 20px;
     color: #42444c;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    word-break: break-all;
+    ${Ellipsis}
   }
 
   .tag_box {
     width: 100%;
     margin-bottom: 0.2em; // 3px
     color: #aaabb3;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    word-break: break-all;
+    ${Ellipsis}
 
     h6 {
       display: inline;
@@ -87,7 +88,7 @@ const StyledThemeCard = styled.div`
     justify-content: space-between;
     width: 100%;
 
-    .download_box {
+    .box {
       display: flex;
       align-items: center;
 
@@ -98,33 +99,19 @@ const StyledThemeCard = styled.div`
       }
 
       p {
-        display: flex;
-        align-items: center;
-        width: 14px;
         font-weight: 500;
         font-size: 0.75em; // 12px
         line-height: 18px;
-        color: #aaabb3;
       }
     }
 
-    .price_box {
-      display: flex;
-      align-items: center;
+    .download {
+      color: #aaabb3;
+    }
 
-      img {
-        width: 12px;
-        height: 12px;
-        margin-right: 4px;
-      }
-
-      p {
-        width: 14px;
-        font-weight: 500;
-        font-size: 0.75em; // 12px
-        line-height: 18px;
-        color: #7dc9fc;
-      }
+    .price p {
+      padding-right: 3px;
+      color: #7dc9fc;
     }
   }
 `;
