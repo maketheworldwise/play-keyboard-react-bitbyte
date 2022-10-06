@@ -1,10 +1,9 @@
 import { useEffect, useState } from 'react';
-
 import { getCategories, getThemes } from './Api';
 
 import Header from '../../Components/Header/Header';
 import Footer from '../../Components/Footer/Footer';
-import Category from './Category';
+import Category from '../../Components/Category/Category';
 import ThemeCardList from '../../Components/ThemeCard/ThemeCardList';
 
 import styles from './Main.module.scss';
@@ -19,10 +18,7 @@ function Main() {
   }, []);
 
   useEffect(() => {
-    getThemes(name).then(
-      //json => console.log(json.data) //data consol로 확인
-      json => setData(json.data)
-    );
+    getThemes(name).then(json => setData(json.data));
   }, [name]);
 
   const handleName = el => {

@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import styled from 'styled-components';
 
 function Category({ category, handleName }) {
   const [active, setActive] = useState('');
+
   return (
     <>
       <Wrap>
@@ -14,7 +14,6 @@ function Category({ category, handleName }) {
                 className={active === list ? 'active' : ''}
                 onClick={e => {
                   e.preventDefault();
-                  //console.log(e.target); //consol로 태그확인
                   setActive(e.target.textContent);
                   handleName(list);
                 }}

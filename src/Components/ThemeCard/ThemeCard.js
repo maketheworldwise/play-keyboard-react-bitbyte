@@ -16,7 +16,7 @@ const ThemeCard = ({ item }) => {
         navigate(`/detail/${themeId}`);
       }}
     >
-      <img className="card_img" src={imageUrl} />
+      <img className="card_img" src={imageUrl} alt="none" />
       <h3 className="card_name">{name}</h3>
       <div className="tag_box">
         {hashtag.map((tag, idx) => (
@@ -25,11 +25,11 @@ const ThemeCard = ({ item }) => {
       </div>
       <div className="info_container">
         <div className="download_box">
-          <img src={downloadIcon} />
-          <p>{downloads.toLocaleString()}</p>
+          <img src={downloadIcon} alt="none" />
+          <p>{downloads}</p>
         </div>
         <div className="price_box">
-          <img src={gemIcon} />
+          <img src={gemIcon} alt="none" />
           <p>{price}</p>
         </div>
       </div>
@@ -128,5 +128,4 @@ const StyledThemeCard = styled.div`
     }
   }
 `;
-
 export default ThemeCard;
