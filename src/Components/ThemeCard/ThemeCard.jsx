@@ -128,4 +128,5 @@ const StyledThemeCard = styled.div`
     }
   }
 `;
+
 export default ThemeCard;
