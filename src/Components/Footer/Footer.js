@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import Admin from '../../Assets/Svgs/bottom_nav/admin.png';
-import Admin_p from '../../Assets/Svgs/bottom_nav/admin_p.png';
-import Store from '../../Assets/Svgs/bottom_nav/store.png';
-import Store_p from '../../Assets/Svgs/bottom_nav/store_p.png';
-import Heart from '../../Assets/Svgs/bottom_nav/heart.png';
-import Heart_p from '../../Assets/Svgs/bottom_nav/heart_p.png';
-import Dia from '../../Assets/Svgs/bottom_nav/dia.png';
-import Dia_p from '../../Assets/Svgs/bottom_nav/dia_p.png';
+import Admin from '../../Assets/Images/bottom_nav/admin.png';
+import Admin_p from '../../Assets/Images/bottom_nav/admin_p.png';
+import Store from '../../Assets/Images/bottom_nav/store.png';
+import Store_p from '../../Assets/Images/bottom_nav/store_p.png';
+import Heart from '../../Assets/Images/bottom_nav/heart.png';
+import Heart_p from '../../Assets/Images/bottom_nav/heart_p.png';
+import Dia from '../../Assets/Images/bottom_nav/dia.png';
+import Dia_p from '../../Assets/Images/bottom_nav/dia_p.png';
 import styled from 'styled-components';
 
 function Footer() {
