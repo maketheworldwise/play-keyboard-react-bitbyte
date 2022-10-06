@@ -28,10 +28,11 @@ function Detail() {
         {/* <EmoticonList data={data} /> */}
         {/* <DetailEmoji /> */}
       </div>
-      {/* <DetailButton /> */}
       <div className={styles.detail_container_bottom}>
-        <EmoticonReviews />
-        <EmoticonFeatures />
+        <DetailEmoji />
+        <DetailButton />
+        {/* <EmoticonReviews />
+        <EmoticonFeatures /> */}
       </div>
     </>
   );

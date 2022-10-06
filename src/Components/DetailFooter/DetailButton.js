@@ -29,16 +29,13 @@ const DetailButton = () => {
 
 const StyledButton = styled.div`
   .button_container {
-    margin: 0 auto;
-    min-width: 15.5em; // 248px
-
     .line {
       width: 100%;
       border: 0.0625em solid #f2f3f7; // 1px
     }
 
     .inquiry_container {
-      padding: 0 0.625em; // 0 10px
+      padding: 0 0.313em; // 0 5px
       margin: 1.5em 1.375em; // 24px 22px
 
       .inquiry_btn {
@@ -46,18 +43,17 @@ const StyledButton = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        max-width: 40.625em; // 650px
-        margin: 0 auto;
-        height: 2.5em; // 40px
+        padding: 0.5em 0; // 8px 0
         border: 0.25em solid #ff417d; // 4px
-        border-radius: 1.25em; // 20px
+        border-radius: 1.313em; // 21px
         background-color: #ffffff;
 
         .inquiry_text {
           width: 100%;
           color: #ff417d;
-          font-size: 0.875em; // 14px
+          font-size: 1.1em; // 17px
           font-weight: 700;
+          line-height: 1.5em; // 24px
         }
       }
     }
@@ -67,28 +63,28 @@ const StyledButton = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 0.56em 0; // 9px 0
       border: none;
-      box-shadow: 0em -0.0625em 0.00625em 0.0625em rgba(0, 0, 0, 0.15); // 0px -1px 0.1px 1px
+      box-shadow: 0em 0.063em 0.25em 0.125em rgba(0, 0, 0, 0.15); // 0px 1px 4px 2px
 
       .purchase_btn {
         width: 100%;
-        max-width: 40.625em; // 650px
-        margin: 0.5625em auto;
-        height: 2.875em; // 46px
         border: none;
-        border-radius: 1.875em; // 30px
+        border-radius: 1.88em; // 30px
         background-color: #ff417d;
+        margin: 0 0.75em; // 0 12px
+        padding: 0.438em 0; // 7px 0
 
         .purchase_mainbox {
           span {
             color: #ffffff;
-            font-size: 0.875em; // 14px
+            font-size: 1.125em; // 18px
             font-weight: 700;
           }
 
           img {
-            width: 0.875em; // 14px
-            height: 0.875em; // 14px
+            width: 1.125em; // 18px
+            height: 1.125em; // 18px
             margin: 0 0.3125em; // 0 5px
             vertical-align: middle;
           }
@@ -96,8 +92,10 @@ const StyledButton = styled.div`
 
         .purchase_subtext {
           color: rgba(255, 255, 255, 1);
-          font-size: 0.75em; // 12px
+          font-size: 0.875em; // 14px
           font-weight: 400;
+          line-height: 1.13em; // 18px
+          margin-top: 2px;
         }
       }
     }

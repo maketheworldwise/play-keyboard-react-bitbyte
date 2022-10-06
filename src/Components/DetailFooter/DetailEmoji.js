@@ -209,7 +209,7 @@ const StyledDetailEmoji = styled.div`
 
       .emoji_img {
         width: 2em;
-        margin-bottom: 0.5em; // 8px
+        margin-bottom: 1.5em; // 8px
       }
 
       .emoji_primary {
@@ -222,13 +222,17 @@ const StyledDetailEmoji = styled.div`
 
       .emoji_text {
         display: block;
-        font-size: 0.875em; // 14px
-        margin-bottom: 0.3125em; // 5px
+        font-size: 0.75em; // 12px
+        font-weight: 400;
+        line-height: 1.13em; // 18px
+        margin-bottom: 1.5em; // 8px
       }
 
       .emoji_number {
         display: block;
-        font-size: 0.625em; // 10px
+        font-size: 0.63em; // 10px
+        font-weight: 400;
+        line-height: 0.88em; // 14px
         margin-bottom: 1.125em; // 18px
       }
     }
