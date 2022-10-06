@@ -30,32 +30,29 @@ function Category({ category, handleName }) {
 export default Category;
 
 const Wrap = styled.ul`
-  width: 100%;
+  /* width: 100%; */
+  min-width: 343px;
+  max-width: 720px;
+  padding-left: 16px;
+  padding-right: 16px;
   height: 48px;
   display: flex;
   overflow-x: scroll;
-  /* border: 1px solid blue; */
   -ms-overflow-style: none;
 
   li {
-    margin-right: 16px;
     padding-top: 14px;
-
+    cursor: pointer;
     span {
-      margin-right: 12px;
-      margin-left: 12px;
-      width: 100%;
+      width: 148px;
       display: block;
       text-align: center;
       height: 32px;
       color: #aaabb3;
-      
       &.active {
-        /* width: 100%; */
         font-weight: 700;
         color: #ff417d;
         border-bottom: 2px solid #ff417d;
-        box-sizing: content-box;
       }
     }
   }
