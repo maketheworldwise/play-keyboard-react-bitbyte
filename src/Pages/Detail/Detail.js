@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getDetail } from './Api';
 
-import Emoticons from '../../Components/page2/Emoticons';
+import Emoticons from '../../Components/Emoticons/Emoticons';
 import DetailEmoji from '../../Components/DetailFooter/DetailEmoji';
 import DetailButton from '../../Components/DetailFooter/DetailButton';
 import EmoticonInfo from '../../Components/EmoticonInfo/EmoticonInfo';
