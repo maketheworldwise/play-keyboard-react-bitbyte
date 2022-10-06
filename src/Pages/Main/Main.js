@@ -1,3 +1,5 @@
+import Footer from '../../Components/Footer/Footer';
+import Header from '../../Components/Header/Header';
 import { useEffect, useState } from 'react';
 
 import { getCategories, getThemes } from './Api';
@@ -29,8 +31,9 @@ function Main() {
 
   return (
     <div className={styles.main_container}>
+      <Header />
       <Category handleName={handleName} category={category} />
-      <ThemeCardList data={data} />
+      <Footer />
     </div>
   );
 }
