@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import styled from 'styled-components';
 
 function Category({ category, handleName }) {
   const [active, setActive] = useState('');
+
   return (
     <>
       <Wrap>
@@ -14,7 +14,6 @@ function Category({ category, handleName }) {
                 className={active === list ? 'active' : ''}
                 onClick={e => {
                   e.preventDefault();
-                  //console.log(e.target); //consol로 태그확인
                   setActive(e.target.textContent);
                   handleName(list);
                 }}
@@ -37,9 +36,11 @@ const Wrap = styled.ul`
   overflow-x: scroll;
   /* border: 1px solid blue; */
   -ms-overflow-style: none;
+
   li {
     margin-right: 16px;
     padding-top: 14px;
+
     span {
       margin-right: 12px;
       margin-left: 12px;
@@ -48,6 +49,7 @@ const Wrap = styled.ul`
       text-align: center;
       height: 32px;
       color: #aaabb3;
+
       &.active {
         /* width: 100%; */
         font-weight: 700;

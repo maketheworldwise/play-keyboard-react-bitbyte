@@ -2,7 +2,13 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getDetail } from './Api';
 
-import DetailInfo from '../../Components/DetailInfo/DetailInfo';
+import Emoticons from '../../Components/page2/Emoticons';
+import DetailEmoji from '../../Components/DetailFooter/DetailEmoji';
+import DetailButton from '../../Components/DetailFooter/DetailButton';
+import EmoticonInfo from '../../Components/EmoticonInfo/EmoticonInfo';
+import EmoticonList from '../../Components/Examples/EmoticonList/EmoticonList';
+import EmoticonReviews from '../../Components/Examples/EmoticonReviews/EmoticonReviews';
+import EmoticonFeatures from '../../Components/Examples/EmoticonFeatures/EmoticonFeatures';
 
 import styles from './Detail.module.scss';
 
@@ -15,9 +21,19 @@ function Detail() {
   }, []);
 
   return (
-    <div className={styles.detail_container}>
-      <DetailInfo data={data} />
-    </div>
+    <>
+      <div className={styles.detail_container_top}>
+        <EmoticonInfo data={data} />
+        {/* <Emoticons /> */}
+        <EmoticonList data={data} />
+        {/* <DetailEmoji /> */}
+      </div>
+      {/* <DetailButton /> */}
+      <div className={styles.detail_container_bottom}>
+        <EmoticonReviews />
+        <EmoticonFeatures />
+      </div>
+    </>
   );
 }
 
